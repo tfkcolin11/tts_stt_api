@@ -1,0 +1,16 @@
+# requirements.txt
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0
+# Coqui TTS and its dependencies (including PyTorch)
+TTS>=0.22.0
+# OpenAI Whisper and its dependencies (including PyTorch if not already covered by TTS)
+openai-whisper>=20231117
+# For audio processing (WAV export by TTS, potential STT input handling)
+soundfile>=0.12.1
+pydub>=0.25.1 # Useful for audio manipulation, Whisper also benefits from ffmpeg
+# For FastAPI file uploads
+python-multipart>=0.0.5
+# PyTorch - Coqui TTS and Whisper will pull this in.
+# Specifying torch version can be good for reproducibility, but often not strictly needed if TTS/Whisper manage it.
+# torch
+# torchaudio
