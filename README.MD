@@ -1,3 +1,7 @@
+# Purpose
+
+This application provides an easy way to access Text-to-Speech (TTS) and Speech-to-Text (STT) inference with Docker and well-defined APIs.
+
 # Build:
 
 ```batch
@@ -54,4 +58,3 @@ Using curl:
 ```Bash
 # Make sure you have an audio file, e.g., 'test_audio.wav'
 curl -X POST -F "audio_file=@test_audio.wav" http://localhost:8000/stt/
-```
